@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book for services</title>
+    <style>
+      .par{
+
+        color: rgb(3, 3, 105);
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #in{
+          font-weight: bold;
+          padding: 10px;
+          margin: 30px;
+      }
+      #on{
+          font-weight: bold;
+          padding: 10px;
+          margin: 30px;
+      }
+      .inp{
+          border-radius: 12px;
+          border-color: rgb(43, 4, 9);
+          width: 400px;
+          height: 30px;
+          padding-left: 40px;
+          margin-left: 40px;
+      }
+      #frm{
+          border: 2px double rgb(131, 60, 84);
+          border-radius: 15px;
+          margin-left: 150px;
+          margin-right: 150px;
+          background-color: rgb(202, 228, 228);
+          
+      }
+      h2{
+          color: rgb(1, 34, 34);
+          font-size: 40px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .btnn:hover{
+        color: rgb(109, 5, 5);
+        background-color: rgb(202, 193, 193);
+      }
+      
+
+
+
+     </style>
+
+     <script>
+          function validate()
+          {
+            nm=document.getElementById("nm").value 
+            mail=document.getElementById("mail").value 
+            phn=document.getElementById("phn").value 
+            date=document.getElementById("date").value 
+            time=document.getElementById("time").value
+            person=document.getElementById("per").value
+            
+            if(nm.length<1)
+            {
+                alert("name is required!!!")
+                return false
+            }
+            if(mail.length<1)
+            {
+                alert("mail is required!!!")
+                return false
+            }
+            if(phn.length<1)
+            {
+                alert("phone number  is required!!!")
+                return false
+            }
+            if(date.length<1)
+            {
+                alert("date is required!!!")
+                return false
+            }
+            if(time.length<1)
+            {
+                alert("time is required!!!")
+                return false
+            }
+            if(per.length<1)
+            {
+                alert("number of person is required!!!")
+                return false
+            }
+
+          }
+          function checkname()
+          {
+            nm=document.getElementById("nm").value
+            if(nm.length<1)
+            {
+                document.getElementById("sp1").innerHTML="required"
+                document.getElementById("sp1").style.color="red"
+            }
+          }
+
+
+     </script>
+</head>
+<body>
+    <center><u><h2>booking form :</h2></u></center>
+    <div id="frm">
+    <form Align="center" action="services.html" method="get">
+        
+        <p class="par">Enter Name :<input id="nm" class="inp" type="text" placeholder="Enter Your Full Name " onblur="checkname()" ><span id="sp1"></span></p>
+        <p class="par">Enter Gmail :<input id="mail" class="inp" type="Gmail" placeholder="Enter Your Gmail " ></p>
+        <p class="par"> Phone number :<input id="phn" class="inp" type="text" placeholder="Enter Your Phone number" ></p>
+        <p class="par"> Gender : Male<input id="gen" class="inc" type="Radio" name="p1">Female<input id="inc" type="Radio" name="p1"></p>
+        <!-- <p id="par">Enter DOB :<input type="date" placeholder="Enter Date Of birth " required></p> -->
+        <p class="par">Enter Event Date :<input id="date" class="inp" type="date" placeholder="Enter Date Of birth "></p>
+        <p class="par">Enter time Of Availability :<input id="time" class="inp" type="time" placeholder="Enter time "></p>
+        <p class="par"> Number Of Persons :<input id="per" class="inp" type="number" placeholder=" select here" required></p>
+        <p class="par"> Event Type?<br> <br>
+            Wedding<input class="inc" type="checkbox">
+            Pre Wedding<input class="inc" type="checkbox">
+            Birthday Ceremony<input class="inc" type="checkbox">
+            College / school Event<input class="inc" type="checkbox">
+            Other Event<input class="inc" type="checkbox">
+
+            <p class="par">Discount Coupon Code:<input id="copn" class="inp" type="number" placeholder=" Write Coupon Code"></p>
+            <p class="par"> Terms and conditions :<br><br> I agree<input type="Radio" name="p1">I disagree<input type="Radio" name="p1"></p>
+        <p class="par" >
+            <label for="city" class="par">Select Places:  </label><br><br>
+            <select name="mycity"id="star">
+
+                <option value="swft">GOA</option>
+                <option value="nxn">MASOORI</option>
+                <option value="sfri"selected>KASHMIR</option>
+                <option value="ind">LADDAKH</option>
+            
+            </select>
+        </p ><br>
+        <div id="divl">
+        <input style="border-radius: 11px;border-color: black; " type="submit" value="SUBMIT" id="in" onclick="return validate()" class="btnn">  <input style="border-radius: 11px;border-color: black;" type="reset" value="RESET" id="on" class="btnn">
+        </div>
+    </form>
+    </div>
+
+
+
+</body>
+</html>

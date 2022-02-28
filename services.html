@@ -5,12 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>photography for you |mycreativity.com</title>
+    <title>services</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 861px)" href="css/phone.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pushster&display=swap" rel="stylesheet">
+
+    <style>
+        #home::before {
+            content: "";
+            background: url('../ser1.jpg') no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 85%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,7 +34,7 @@
         </div>
 
         <ul>
-            <li class="item"><a href="index.html" target="blank">Home</a></li>
+            <li class="item"><a href="index.html">Home</a></li>
             <li class="item"><a href="services.html" target="blank">Our Services</a></li>
             <li class="item"><a href="#client-section">Our Clients</a></li>
             <li class="item"><a href="contact.html" target="blank">Book for Services</a></li>
@@ -29,104 +43,70 @@
     </nav>
 
     <section id="home">
-        <marquee behavior="slide" direction="Up"><h1 style="color:#43021d;">Welcome to my photography world</h1></marquee>
+        <marquee behavior="slide" direction="Up">
+            <h1 style="color:#27010f;">Watch My Services here</h1>
+        </marquee>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
         <p>Lorem ipsum dolor sit amet consectetur </p>
         <button class="btn" onclick="show()">Book Now</button>
-        <div class="timer">
-             Date/Time is : <span id="time"></span>
-            </div>
+
     </section>
 
     <section id="service-container">
         <h1 class="h-primary center">Our Services</h1>
         <div id="services">
             <div class="box">
-                <img src="img/1img.jpg" alt="no image">
+                <marquee behavior="slide" direction="left" scrollamount="7"><img src="img/1img.jpg" alt="no image">
+                </marquee>
                 <h2 class="h-secondory center">Wedding</h2>
                 <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde porro
                     similique neque. Minima, maxima over display watch my content over here and choose once whatever you
                     like and keep in contact.....</p>
             </div>
             <div class="box">
-                <img src="img/2img.jpg" alt="no image">
+                <marquee behavior="slide" direction="up" scrollamount="15"><img src="img/2img.jpg" alt="no image">
+                </marquee>
                 <h2 class="h-secondory center">Pre Wedding</h2>
                 <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde porro
                     similique neque. Minima, maxima over display watch my content over here and choose once whatever you
                     like and keep in contact.....</p>
             </div>
             <div class="box">
-                <img src="img/3jpg.jpg" alt="no image">
+                <marquee behavior="slide" direction="up" scrollamount="6"><img src="img/3jpg.jpg" alt="no image">
+                </marquee>
                 <h2 class="h-secondory center">Couples</h2>
                 <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde porro
                     similique neque. Minima, maxima over display watch my content over here and choose once whatever you
                     like and keep in contact.....</p>
             </div>
-        </div>
-    </section>
-    <section id="client-section">
-        <h1 class="h-primary center">Our clients</h1>
-        <div id="clients">
-            <div class="client-item">
-                <img src="img/logo2.png" alt="our clients">
-            </div>
-            <div class="client-item">
-                <img src="img/logo3.png" alt="our clients">
-            </div>
-            <div class="client-item">
-                <img src="img/logo4.png" alt="our clients">
-            </div>
-            <div class="client-item">
-                <img src="img/loogo6.jpeg" alt="our clients">
-            </div>
 
         </div>
-    </section>
-
-    <section id="contact">
-        <h1 class="h-primary center">Contact Us</h1>
-        <div id="contact-box">
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Name: </label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="mail">Email: </label>
-                    <input type="email" name="Email" id="mail" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone number: </label>
-                    <input type="Phone" name="name" id="phone" placeholder="Enter your Phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message: </label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-            </form>
+        <div id="services">
+            <div class="box">
+                <marquee behavior="slide" direction="left" scrollamount="9"><img src="img/nat4.jpg" alt="no image">
+                </marquee>
+                <h2 class="h-secondory center">Pre Wedding</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde porro
+                    similique neque. Minima, maxima over display watch my content over here and choose once whatever you
+                    like and keep in contact.....</p>
+            </div>
+            <div class="box">
+                <marquee behavior="slide" direction="down" scrollamount="7"><img src="img/nat1.jpg" alt="no image">
+                </marquee>
+                <h2 class="h-secondory center">Pre Wedding</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde porro
+                    similique neque. Minima, maxima over display watch my content over here and choose once whatever you
+                    like and keep in contact.....</p>
+            </div>
+            <div class="box">
+                <marquee behavior="slide" direction="left" scrollamount="5"><img src="img/nat5.jpg" alt="no image">
+                </marquee>
+                <h2 class="h-secondory center">Pre Wedding</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde porro
+                    similique neque. Minima, maxima over display watch my content over here and choose once whatever you
+                    like and keep in contact.....</p>
+            </div>
         </div>
-
-    </section>
-    <footer>
-        <div class="center">
-            copright &copy; www.shubhaminitiative.com All right resevred:
-        </div>
-    </footer>
-
-
-    <script>
-        function show() {
-            alert("you can not book because site is in progress:")
-
-        }
-
-        function displaytime() {
-            time = new Date()
-            console.log('time');
-            document.getElementById('time').innerHTML = time;
-        }
-        setInterval(displaytime, 1000);
-    </script>
 
 
 </body>
